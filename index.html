@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet" />
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<nav>
+  <a href="#home" class="nav-logo">&lt;MyProfile /&gt;</a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <button id="theme-btn" aria-label="Toggle theme">🌙</button>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+
+  <div class="hero-content">
+
+    <p class="greeting" id="greeting">// Hello 👋</p>
+
+    <h1 class="hero-name">
+      I'm <span>NURIL FAIZ</span>
+    </h1>
+
+    <p class="hero-role" id="typing-text">
+      <span class="cursor"></span>
+    </p>
+
+    <p class="hero-bio">
+      Halo! Saya seorang developer yang senang membangun website, belajar teknologi baru, dan menciptakan solusi yang bermanfaat.
+
+    </p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">
+       View my work
+      </a>
+
+      <a href="#contact" class="btn btn-outline">
+        Get in touch
+      </a>
+    </div>
+
+    <div class="age-badge">
+      🎂 Age: <strong id="age-display">—</strong> years old
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+
+    <div class="blob"></div>
+
+    <div class="bubble bubble1"></div>
+    <div class="bubble bubble2"></div>
+    <div class="bubble bubble3"></div>
+
+    <img src="assets/profil home.jpeg" alt="Profile">
+
+  </div>
+
+</section>
+
+<section id="about">
+  <p class="section-label">// 01. about me</p>
+  <h2 class="section-title">Who am I?</h2>
+  <div class="about-grid">
+    <div class="about-image">
+      <div class="profile-card">
+        <img src="assets/foto-profil.jpeg" alt="Profile Photo" class="profile-photo">
+        <div class="profile-card-content">
+          <h3>Nuril Faiz</h3>
+          <p>Web Developer &amp; Designer</p>
+        </div>
+      </div>
+    </div>
+    <div class="about-content">
+      <div class="tab-nav">
+        <button class="tab-btn active" data-tab="story">My story</button>
+        <button class="tab-btn" data-tab="education">Education</button>
+        <button class="tab-btn" data-tab="hobbies">Hobbies</button>
+      </div>
+      <div class="tab-panel active" id="tab-story">
+        <p>Nama: Nuril Faiz</p>
+        <p>TTL: Cilacap, 24 Februari 2006</p>
+        <p>Profesi: Mahasiswa/ Full Stack Developer/ Freelancer</p>
+        <p>Lokasi: Indonesia</p>
+        <p>Email: nurilfaizun@gmail.com</p>
+        <p>Halo! Saya adalah seorang developer yang senang membangun website dan aplikasi yang bermanfaat. Saya tertarik pada pengembangan web dan desain antarmuka, serta terus mempelajari teknologi baru untuk mengembangkan kemampuan. Bagi saya, setiap proyek adalah kesempatan untuk belajar, berkembang, dan menciptakan solusi yang lebih baik.</p>
+      </div>
+      <div class="tab-panel" id="tab-education">
+        <div class="info-grid">
+          <div class="info-item"><label>Pendidikan Formal</label><span>SDN Rawajaya 03</span></div>
+          <div class="info-item"><span>MTs Salafiyah Bantarsari</span></div>
+          <div class="info-item"><span>MAN 1 Cilacap</span></div>
+          <div class="info-item"><span>S1 Informatika Universitas Nahdlatul Ulama Al Ghazali Cilacap</span></div>
+        </div>
+        <div class="info-grid">
+          <div class="info-item"><label>Pendidikan Non Formal</label><span>Pondok Pesantren Anwaarunnajaah Kesugihan</span></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="tab-hobbies">
+        <p>Di luar dunia coding, saya senang mencoba hal-hal baru dan terus mengembangkan diri. Saya gemar mengikuti perkembangan teknologi, mempelajari keterampilan baru, serta menikmati musik, film, game, dan secangkir kopi di waktu luang. Bagi saya, keseimbangan antara pekerjaan dan waktu istirahat adalah kunci untuk tetap kreatif, produktif, dan termotivasi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <p class="section-label">// 02. skills</p>
+  <h2 class="section-title">What I know</h2>
+  <div class="skills-grid" id="skills-grid">
+    <div class="skill-item" data-level="90">
+      <div class="skill-header"><span class="skill-name">HTML5</span><span class="skill-pct">90%</span></div>
+      <div class="skill-bar"><div class="skill-fill"></div></div>
+    </div>
+    <div class="skill-item" data-level="75">
+      <div class="skill-header"><span class="skill-name">CSS3</span><span class="skill-pct">75%</span></div>
+      <div class="skill-bar"><div class="skill-fill secondary"></div></div>
+    </div>
+    <div class="skill-item" data-level="55">
+      <div class="skill-header"><span class="skill-name">JavaScript</span><span class="skill-pct">55%</span></div>
+      <div class="skill-bar"><div class="skill-fill"></div></div>
+    </div>
+    <div class="skill-item" data-level="40">
+      <div class="skill-header"><span class="skill-name">Git & GitHub</span><span class="skill-pct">40%</span></div>
+      <div class="skill-bar"><div class="skill-fill secondary"></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <p class="section-label">// 03. projects</p>
+  <h2 class="section-title">My work</h2>
+  <div class="project-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="html">HTML/CSS</button>
+    <button class="filter-btn" data-filter="js">JavaScript</button>
+    <button class="filter-btn" data-filter="design">Design</button>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card" data-category="html">
+      <div class="project-image">
+        <img src="assets/profil web.png" alt="Personal Profile Page">
+      </div>
+      <span class="project-tag">HTML/CSS</span>
+      <h3>Personal Profile Page</h3>
+      <p>Proyek web pertama saya — profil pribadi yang dibangun hanya menggunakan HTML & CSS dengan desain responsif.</p>
+    </div>
+    <div class="project-card" data-category="js">
+      <div class="project-image">
+        <img src="assets/to-do-listapp.jpg" alt="To-Do List App">
+      </div>
+      <span class="project-tag">JavaScript</span>
+      <h3>To-Do List App</h3>
+      <p>Pengelola tugas sederhana dengan fitur tambah, selesaikan, dan hapus yang dibangun dengan Vanilla.JS. </p>
+    </div>
+    <div class="project-card" data-category="design">
+      <div class="project-image">
+        <img src="assets/app-ui-mockup.jpg" alt="App UI Mockup">
+      </div>
+      <span class="project-tag">Design</span>
+      <h3>App UI Mockup</h3>
+      <p>Sebuah mockup desain mobile-first untuk aplikasi pengiriman makanan lokal yang dibuat di Figma.</p>
+    </div>
+    <div class="project-card" data-category="html">
+      <div class="project-image">
+        <img src="assets/landingpage-restaurant.jpg" alt="Restaurant Landing Page">
+      </div>
+      <span class="project-tag">HTML/CSS</span>
+      <h3>Restaurant Landing Page</h3>
+      <p>Landing page responsif untuk warung lokal dengan bagian menu dan formulir kontak.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <p class="section-label">// 04. contact</p>
+  <h2 class="section-title">Get in touch</h2>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <p>Ingin berdiskusi, mengobrol, atau sekedar  menyapa?</p>
+    </div>
+    <div class="contact-info">
+
+    <a href="mailto:nurilfaizun@gmail.com" class="contact-card">
+      <i class="fa-solid fa-envelope"></i>
+
+      <div>
+        <h4>Email</h4>
+        <p>nurilfaizun@gmail.com</p>
+      </div>
+    </a>
+
+    <a href="https://github.com/nurilfaizun-rocket-it"
+      target="_blank"
+      class="contact-card">
+
+      <i class="fa-brands fa-github"></i>
+
+      <div>
+        <h4>GitHub</h4>
+        <p>github.com/nurilfaizun-rocket-it</p>
+      </div>
+
+    </a>
+
+    <a href="https://www.instagram.com/faiznrills?igsh=MWxqc3F0MTI4ajdmNQ=="
+      target="_blank"
+      class="contact-card">
+
+      <i class="fa-brands fa-instagram"></i>
+
+      <div>
+        <h4>Instagram</h4>
+        <p>@faiznrills</p>
+      </div>
+
+    </a>
+
+</div>
+        <form class="contact-form" id="contact-form" novalidate>
+      <div class="form-group">
+        <label for="name">Your name</label>
+        <input type="text" id="name" placeholder="Full name" required>
+        <span class="field-error" id="err-name"></span>
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" id="email" placeholder="email@example.com" required>
+        <span class="field-error" id="err-email"></span>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Write your message here..." required></textarea>
+        <span class="field-error" id="err-message"></span>
+      </div>
+      <button type="submit" class="btn btn-primary">Send message →</button>
+      <div class="form-success" id="form-success">
+        ✅ Message sent! I'll get back to you soon.
+      </div>
+      <div id="server-error" style="color: #e74c3c; display: none;"></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Nuril Faiz</p>
+
+<p>Made using HTML, CSS, JavaScript, ExpressJS & MySQL and don't forget ❤️ hehe...</p>
+</footer>
+
+<script src="profile.js"></script>
+<script>
+  // Register Service Worker
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then((registration) => {
+        console.log('✅ Service Worker registered');
+        
+        if ('Notification' in window && Notification.permission === 'default') {
+          Notification.requestPermission();
+        }
+      })
+      .catch((error) => {
+        console.log('❌ Service Worker registration failed:', error);
+      });
+  }
+
+  function showNotification() {
+    if (Notification.permission === 'granted') {
+      navigator.serviceWorker.ready.then((registration) => {
+        registration.showNotification('👋 Selamat Datang!', {
+          body: 'Terima kasih telah mengunjungi profile saya!',
+          icon: '/icon-192x192.png',
+          vibrate: [200, 100, 200]
+        });
+      });
+    }
+  }
+</script>
+</body>
+</html>

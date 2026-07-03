@@ -1,0 +1,13 @@
+# Node Modules
+node_modules/
+server/node_modules/
+
+# Environment
+.env
+server/.env
+
+# VS Code
+.vscode/
+
+# Log
+*.log

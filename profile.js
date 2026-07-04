@@ -411,7 +411,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 // 🔹 TAMBAHAN: Koneksi ke Backend (API)
 // =============================================
 
-const API_URL = 'profile-website-production-0b6d.up.railway.app';
+const API_URL = 'https://profile-website-production-0b6d.up.railway.app';
 
 // 🔹 Submit form ke backend
 contactForm.addEventListener('submit', async function(e) {
